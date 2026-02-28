@@ -1,0 +1,10 @@
+[project]
+name = "visions"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "vision-agents-plugins-ultralytics>=0.3.7",
+    "vision-agents[deepgram,elevenlabs,gemini,getstream]>=0.3.7",
+]

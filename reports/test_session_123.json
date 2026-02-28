@@ -1,0 +1,84 @@
+{
+  "session_id": "test_session_123",
+  "mode": "interview",
+  "generated_at": "2026-02-28T13:46:34Z",
+  "duration_seconds": 60,
+  "snapshot_count": 2,
+  "summary_scores": {
+    "overall_average": 80.0,
+    "overall_peak": 85,
+    "overall_final": 85,
+    "clarity": 82.5,
+    "structure": 72.5,
+    "confidence_language": 62.5,
+    "confidence_body": 86.5,
+    "engagement": 91.0,
+    "average_wpm": 135.0,
+    "average_filler_count": 1.5,
+    "average_hesitation_index": 12.5
+  },
+  "trends": {
+    "overall_score": "improving",
+    "clarity": "stable",
+    "confidence": "stable",
+    "body_language": "stable",
+    "hesitation": "stable"
+  },
+  "strengths": [
+    "Excellent message clarity (82/100)",
+    "Strong physical presence and confident body language (86/100)",
+    "High engagement and camera presence (91/100)"
+  ],
+  "improvement_areas": [
+    "Maintain stronger eye contact with the camera"
+  ],
+  "next_session_focus": "Maintain stronger eye contact with the camera",
+  "score_timeline": [
+    {
+      "elapsed": 30,
+      "score": 75
+    },
+    {
+      "elapsed": 60,
+      "score": 85
+    }
+  ],
+  "raw_snapshots": [
+    {
+      "elapsed_seconds": 30,
+      "overall_score": 75,
+      "language": {
+        "clarity_score": 80,
+        "structure_score": 70,
+        "confidence_score": 60
+      },
+      "vision": {
+        "confidence_index": 85,
+        "engagement_score": 90
+      },
+      "speech": {
+        "wpm": 130,
+        "filler_count": 2,
+        "hesitation_index": 15
+      }
+    },
+    {
+      "elapsed_seconds": 60,
+      "overall_score": 85,
+      "language": {
+        "clarity_score": 85,
+        "structure_score": 75,
+        "confidence_score": 65
+      },
+      "vision": {
+        "confidence_index": 88,
+        "engagement_score": 92
+      },
+      "speech": {
+        "wpm": 140,
+        "filler_count": 1,
+        "hesitation_index": 10
+      }
+    }
+  ]
+}
