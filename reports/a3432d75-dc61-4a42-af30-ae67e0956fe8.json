@@ -1,0 +1,83 @@
+{
+  "session_id": "a3432d75-dc61-4a42-af30-ae67e0956fe8",
+  "mode": "interview",
+  "generated_at": "2026-02-28T21:35:53Z",
+  "duration_seconds": 66.7,
+  "snapshot_count": 1,
+  "summary_scores": {
+    "overall_average": 70.0,
+    "overall_peak": 70.0,
+    "overall_final": 70.0,
+    "clarity": 70.0,
+    "structure": 70.0,
+    "confidence_language": 70.0,
+    "confidence_body": 70.0,
+    "engagement": 70.0,
+    "average_wpm": 0.0,
+    "average_filler_count": 0.0,
+    "average_hesitation_index": 0.0
+  },
+  "trends": {
+    "overall_score": "stable",
+    "clarity": "stable",
+    "confidence": "stable",
+    "body_language": "stable",
+    "hesitation": "stable"
+  },
+  "strengths": [
+    "Strong physical presence and confident body language (70/100)",
+    "High engagement and camera presence (70/100)",
+    "Very low filler word usage \u2014 speaks fluently and directly"
+  ],
+  "improvement_areas": [
+    "Maintain stronger eye contact with the camera"
+  ],
+  "next_session_focus": "Maintain stronger eye contact with the camera",
+  "score_timeline": [
+    {
+      "elapsed": 66.7,
+      "score": 70.0
+    }
+  ],
+  "raw_snapshots": [
+    {
+      "timestamp": 1772314533.997885,
+      "elapsed_seconds": 66.7,
+      "overall_score": 70.0,
+      "speech": {
+        "wpm": 0.0,
+        "filler_count": 0,
+        "avg_pause_duration_ms": 0.0,
+        "hesitation_index": 0.0,
+        "window_elapsed_seconds": 73.8,
+        "window_text": "",
+        "session_wpm": 0.0,
+        "session_total_words": 0,
+        "session_total_fillers": 0,
+        "wpm_status": "ideal"
+      },
+      "language": {
+        "clarity_score": 70,
+        "structure_score": 70,
+        "confidence_score": 70,
+        "vocabulary_score": 70,
+        "emotional_tone": "neutral",
+        "star_components_present": [],
+        "grammar_issues": [],
+        "suggestions": [],
+        "top_strength": "Keep going \u2014 you're making progress.",
+        "priority_fix": "Focus on speaking clearly and directly."
+      },
+      "vision": {
+        "confidence_index": 70.0,
+        "engagement_score": 70.0,
+        "body_language_rating": "good",
+        "posture": "upright",
+        "eye_contact": "strong",
+        "hand_activity": "natural",
+        "persons_detected": 0
+      },
+      "coaching_message": "The user hasn't spoken much yet. Encourage them to continue and remind them you're listening. Keep it warm and brief."
+    }
+  ]
+}

@@ -215,9 +215,9 @@ async def start_communication_coach() -> None:
             # ── Session ended cleanly: generate report ──────────────────
             await _generate_and_deliver_report()
 
-        except Exception as e:
+        except BaseException as e:
             # ── Session ended abruptly: still save the report ──────────
-            logger.warning(f"Session ended unexpectedly ({e}). Saving report anyway...")
+            logger.warning(f"Session ended unexpectedly ({type(e).__name__}: {e}). Saving report anyway...")
             try:
                 await _generate_and_deliver_report()
             except Exception as report_err:

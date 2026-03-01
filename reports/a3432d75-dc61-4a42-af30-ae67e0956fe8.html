@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Session Report — Interview Coach</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh;padding:2rem 1rem}
+  .container{max-width:860px;margin:0 auto}
+  header{text-align:center;margin-bottom:2.5rem}
+  header h1{font-size:1.6rem;font-weight:800;letter-spacing:-0.5px;color:#f8fafc}
+  header p{color:#94a3b8;font-size:0.9rem;margin-top:0.4rem}
+  .hero{display:flex;align-items:center;justify-content:center;gap:3rem;background:#1e293b;border-radius:1.25rem;padding:2rem 2.5rem;margin-bottom:2rem;flex-wrap:wrap}
+  .gauge-wrap{text-align:center}
+  .gauge-wrap svg{display:block;margin:0 auto}
+  .gauge-label{margin-top:0.5rem;font-size:0.85rem;color:#94a3b8}
+  .gauge-tier{font-size:1.1rem;font-weight:700;color:#3b82f6}
+  .hero-meta{text-align:left}
+  .hero-meta h2{font-size:1.05rem;font-weight:700;color:#f1f5f9;margin-bottom:0.75rem}
+  .meta-row{display:flex;gap:0.5rem;align-items:center;color:#94a3b8;font-size:0.85rem;margin-bottom:0.3rem}
+  .meta-row strong{color:#e2e8f0}
+  .section-title{font-size:1rem;font-weight:700;margin-bottom:1rem;color:#f1f5f9}
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1rem;margin-bottom:2rem}
+  .card{background:#1e293b;border-radius:1rem;padding:1rem 1.1rem}
+  .card-label{font-size:0.75rem;color:#94a3b8;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.3rem}
+  .card-score{font-size:1.6rem;font-weight:800;color:#f8fafc;line-height:1;margin-bottom:0.5rem}
+  .bar-bg{background:#334155;border-radius:99px;height:5px;overflow:hidden}
+  .bar-fill{height:100%;border-radius:99px;transition:width 0.8s ease}
+  .speech-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2rem}
+  .stat-box{background:#1e293b;border-radius:1rem;padding:1rem;text-align:center}
+  .stat-value{font-size:1.5rem;font-weight:800;color:#f8fafc}
+  .stat-unit{font-size:0.75rem;color:#94a3b8;margin-top:0.2rem}
+  .lists{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2rem}
+  .list-box{background:#1e293b;border-radius:1rem;padding:1.25rem}
+  .list-box h3{font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.75rem;color:#94a3b8}
+  .list-box ul{list-style:none;display:flex;flex-direction:column;gap:0.5rem}
+  .list-box li{font-size:0.87rem;color:#cbd5e1;line-height:1.4}
+  .focus-box{background:linear-gradient(135deg,#1e3a5f,#1e293b);border:1px solid #3b82f6;border-radius:1rem;padding:1.25rem 1.5rem;margin-bottom:2rem}
+  .focus-box h3{font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:#60a5fa;margin-bottom:0.5rem}
+  .focus-box p{font-size:0.92rem;color:#e2e8f0}
+  .chart-section{background:#1e293b;border-radius:1rem;padding:1.25rem;margin-bottom:2rem}
+  .chart-section svg{width:100%;height:160px}
+  footer{text-align:center;color:#475569;font-size:0.78rem;margin-top:1rem}
+  @media(max-width:540px){.lists{grid-template-columns:1fr}.hero{gap:1.5rem}.speech-stats{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>🎯 Interview Session Report</h1>
+    <p>2026-02-28 21:35:53 UTC &nbsp;·&nbsp; Duration: 1m 6s</p>
+  </header>
+
+  <!-- Hero: gauge + meta -->
+  <div class="hero">
+    <div class="gauge-wrap">
+      <svg width="130" height="130" viewBox="0 0 130 130">
+        <circle cx="65" cy="65" r="54" fill="none" stroke="#334155" stroke-width="12"/>
+        <circle cx="65" cy="65" r="54" fill="none" stroke="#3b82f6" stroke-width="12"
+          stroke-dasharray="339.3" stroke-dashoffset="101.8"
+          stroke-linecap="round" transform="rotate(-90 65 65)"/>
+        <text x="65" y="60" text-anchor="middle" font-size="22" font-weight="800" fill="#f8fafc" font-family="Inter,sans-serif">70</text>
+        <text x="65" y="76" text-anchor="middle" font-size="11" fill="#94a3b8" font-family="Inter,sans-serif">/100</text>
+      </svg>
+      <div class="gauge-tier">Solid</div>
+      <div class="gauge-label">Overall Score</div>
+    </div>
+    <div class="hero-meta">
+      <h2>Session Summary</h2>
+      <div class="meta-row"><strong>Mode:</strong>&nbsp;Interview</div>
+      <div class="meta-row"><strong>Duration:</strong>&nbsp;1m 6s</div>
+      <div class="meta-row"><strong>Snapshots:</strong>&nbsp;1</div>
+      <div class="meta-row"><strong>Overall Trend:</strong>&nbsp;<span style="color:#94a3b8;font-size:0.75rem;font-weight:600">● Stable</span></div>
+    </div>
+  </div>
+
+  <!-- Score cards -->
+  <div class="section-title">Score Breakdown</div>
+  <div class="cards">
+    
+            <div class="card">
+              <div class="card-label">Clarity</div>
+              <div class="card-score">70<span style="font-size:1rem;color:#94a3b8">/100</span></div>
+              <div class="bar-bg"><div class="bar-fill" style="width:70.0%;background:#3b82f6"></div></div>
+              <br><span style="color:#94a3b8;font-size:0.75rem;font-weight:600">● Stable</span>
+            </div>
+    
+            <div class="card">
+              <div class="card-label">Structure</div>
+              <div class="card-score">70<span style="font-size:1rem;color:#94a3b8">/100</span></div>
+              <div class="bar-bg"><div class="bar-fill" style="width:70.0%;background:#3b82f6"></div></div>
+              
+            </div>
+    
+            <div class="card">
+              <div class="card-label">Confidence</div>
+              <div class="card-score">70<span style="font-size:1rem;color:#94a3b8">/100</span></div>
+              <div class="bar-bg"><div class="bar-fill" style="width:70.0%;background:#3b82f6"></div></div>
+              <br><span style="color:#94a3b8;font-size:0.75rem;font-weight:600">● Stable</span>
+            </div>
+    
+            <div class="card">
+              <div class="card-label">Body Language</div>
+              <div class="card-score">70<span style="font-size:1rem;color:#94a3b8">/100</span></div>
+              <div class="bar-bg"><div class="bar-fill" style="width:70.0%;background:#3b82f6"></div></div>
+              <br><span style="color:#94a3b8;font-size:0.75rem;font-weight:600">● Stable</span>
+            </div>
+    
+            <div class="card">
+              <div class="card-label">Engagement</div>
+              <div class="card-score">70<span style="font-size:1rem;color:#94a3b8">/100</span></div>
+              <div class="bar-bg"><div class="bar-fill" style="width:70.0%;background:#3b82f6"></div></div>
+              
+            </div>
+  </div>
+
+  <!-- Speech stats -->
+  <div class="section-title">Speech Metrics</div>
+  <div class="speech-stats">
+    <div class="stat-box">
+      <div class="stat-value">0</div>
+      <div class="stat-unit">WPM (avg)</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-value">0.0</div>
+      <div class="stat-unit">Filler words / 30s</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-value">0</div>
+      <div class="stat-unit">Hesitation index <span style="color:#94a3b8;font-size:0.75rem;font-weight:600">● Stable</span></div>
+    </div>
+  </div>
+  <div class="chart-section">
+    <div class="section-title" style="margin-bottom:0.75rem">Score Timeline</div>
+    <svg viewBox="0 0 580 150" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <linearGradient id="lg" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.3"/>
+          <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <!-- Grid lines -->
+      <line x1="0" y1="35" x2="560" y2="35" stroke="#334155" stroke-width="1" stroke-dasharray="4"/>
+      <line x1="0" y1="70" x2="560" y2="70" stroke="#334155" stroke-width="1" stroke-dasharray="4"/>
+      <line x1="0" y1="105" x2="560" y2="105" stroke="#334155" stroke-width="1" stroke-dasharray="4"/>
+      <text x="565" y="38" fill="#475569" font-size="9" font-family="Inter,sans-serif">75</text>
+      <text x="565" y="73" fill="#475569" font-size="9" font-family="Inter,sans-serif">50</text>
+      <text x="565" y="108" fill="#475569" font-size="9" font-family="Inter,sans-serif">25</text>
+      <!-- Fill area -->
+      <polygon points="560.0,42.0 560,140 0,140" fill="url(#lg)"/>
+      <!-- Line -->
+      <polyline points="560.0,42.0" fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <!-- Strengths and improvements -->
+  <div class="lists">
+    <div class="list-box">
+      <h3>Strengths</h3>
+      <ul><li>✅ Strong physical presence and confident body language (70/100)</li><li>✅ High engagement and camera presence (70/100)</li><li>✅ Very low filler word usage — speaks fluently and directly</li></ul>
+    </div>
+    <div class="list-box">
+      <h3>Areas for Improvement</h3>
+      <ul><li>🎯 Maintain stronger eye contact with the camera</li></ul>
+    </div>
+  </div>
+
+  <!-- Next session focus -->
+  <div class="focus-box">
+    <h3>🎯 Next Session Focus</h3>
+    <p>Maintain stronger eye contact with the camera</p>
+  </div>
+
+  <footer>Visions AI Coach &nbsp;·&nbsp; Session a3432d75-dc61-4a42-af30-ae67e0956fe8 &nbsp;·&nbsp; 2026-02-28T21:35:53Z</footer>
+</div>
+</body>
+</html>
