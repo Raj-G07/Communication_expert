@@ -43,6 +43,63 @@ Every 30 seconds the **analysis loop** fires:
 4. `SessionManager` — records a `CoachingSnapshot` and Gemini delivers spoken feedback.
 5. On call end — `PerformanceReport` builds a full HTML / Markdown / JSON session report.
 
+To visualize how all these separated folders actually move data in real-time within the orchestrator, here is a diagram of the call flow:
+
+```mermaid
+graph TD
+
+    %% Styles
+    classDef user fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#000
+    classDef edge fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#000
+    classDef processors fill:#e8f5e9,stroke:#388e3c,stroke-width:2px,color:#000
+    classDef llm fill:#f3e5f5,stroke:#8e24aa,stroke-width:2px,color:#000
+    classDef session fill:#fffde7,stroke:#fbc02d,stroke-width:2px,color:#000
+
+    %% User
+    User["User Camera & Microphone"]:::user
+
+    %% Stream Edge Layer
+    subgraph Stream_Edge
+        WebRTC["WebRTC Connection"]:::edge
+    end
+
+    User <-->|Video and Audio| WebRTC
+
+    %% Processing Layer
+    subgraph Processing_Pipelines
+        Deepgram["Deepgram STT"]:::processors
+        YOLO["YOLO Vision Processor"]:::processors
+        Speech["Speech Metrics Processor"]:::processors
+
+        WebRTC -->|Audio Track| Deepgram
+        WebRTC -->|Video Frames| YOLO
+        Deepgram -->|Transcripts| Speech
+    end
+
+    %% Intelligence Layer
+    subgraph Intelligence_Layer
+        SessionManager["Session Manager (30s Trigger)"]:::session
+        LangIntel["Language Intelligence Module"]:::llm
+        Gemini["Gemini Realtime API"]:::llm
+        Report["Performance Report Generator"]:::session
+
+        Speech -->|WPM & Hesitation| SessionManager
+        YOLO -->|Body Metrics| SessionManager
+        SessionManager -->|Aggregated State| LangIntel
+        LangIntel -->|Coaching Context| Gemini
+        SessionManager -.->|Save Snapshot| Report
+    end
+
+    %% Voice Output
+    subgraph Voice_Output
+        ElevenLabs["ElevenLabs TTS"]:::processors
+
+        Gemini -->|Text Coaching| ElevenLabs
+        ElevenLabs -->|Synthetic Audio| WebRTC
+    end
+
+ ```
+
 ---
 
 ## Coaching Modes
