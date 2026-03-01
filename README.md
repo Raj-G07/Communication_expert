@@ -112,6 +112,10 @@ graph TD
 | 🌟 Daily Fluency | `fluency` | Conversational flow, vocabulary, naturalness |
 
 ---
+## Demos and Screenshots
+- [AI Multimodal Communication Coach](https://youtu.be/cFI3myhqBwk?si=UsaQqyrDE6D5LjQP)
+- [Blog Post](https://dev.to/rajg07/building-a-real-time-multimodal-ai-communication-coach-1o5e)
+ <img width="1313" height="635" alt="Screenshot 2026-03-01 184159" src="https://github.com/user-attachments/assets/ab8d58c4-8bc1-4fa3-a800-c0d26f3726cf" />
 
 ## Prerequisites
 
